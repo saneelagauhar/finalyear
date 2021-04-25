@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BrainTumor Detection</title>
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/head.css') }}"> -->
+        
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+
+
+.main {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    
+}
+
+.cuadrado {
+    width: 35px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    border-width: 10px;
+    border-style: hidden;
+    border-radius: 10px;
+    border-color:#440a3a;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    padding: 0 2px 1px 2px;
+}
+
+#DS {
+    position: absolute;
+    color: #fff;
+    line-height: 30px;
+    top: 10%;
+    left: 0%;
+}
+
+/*NAVIGATION BAR STYLING*/
+nav {
+    /* background: #0001;*/
+    background: #440a3a;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 100%;
+    
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+    margin-top: 0%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 3px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    font-family: Century Gothic;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    text-align: center;
+    transition: ease-in-out;
+    font-size: 105%;
+}
+
+body h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 10%;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 0%;
+}
+*{
+    background-color:#440a3a;
+    color:white;
+    
+}
+
+
+
+            
+            body{
+    margin:0;
+    background-color: #440a3a;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.line{
+    color:white;
+    top:30px;
+}
+.important{
+        color: white;
+        font-size:2rem;
+        top:3px;
+}
+.important p{
+        color: white;
+        font-size:1rem;
+}
+.mail a{
+        float: left;
+        left:43%;
+        margin-top: 5%;
+         position: absolute;
+         text-align:center;
+         font-size:2rem;
+         padding-top:10px;
+
+ }
+
+.social-main{
+   
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-top:50px;
+
+}
+.social-main a{
+  width:50px;
+  height:50px;
+  color:white;
+  background-color:black;
+  border-radius:50%;
+  margin: 0 20px;
+  position:relative;
+  text-align:center;
+}
+.social-main a i{
+  background:white;
+  line-height:50px;
+  background-clip:white;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  transition:all 0.4s;
+}
+.social-main a::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  background-color:white;
+  border-radius:15px;
+  z-index:-1;
+  transform:scale(1.1);
+  transition: all 0.4s;
+}
+.social-main a:hover i{
+  background:rgb(0,0,255);
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+}
+.social-main a:hover::before{
+  background-color:white;
+}
+
+      .button{
+        color: white;
+        background-color: #0002;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 40px;
+        display: inline-block;
+        font-family:Century Gothic;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      button a{
+          color:white;
+          text-decoration: none;
+      }
+      .button a:hover{
+          border:0px;
+          text-decoration: none;
+      }
+
+        </style>
+    </head>
+    <body>
+   
+        <!--nav class="navbar"-->
+        <nav style="background-color: #440a3a;">
+            <!--LOGO-->
+            <div class="main">
+                <div  class="cuadrado">BrainTumorDetection</div>
+            </div>
+            <!--NAVIGATION BAR-->
+            <ul>
+                <li><a class="active" href="home">Home</a></li>
+                 <li><a href="about">About</a></li>
+                <li><a href="base">Upload</a></li>
+ <li><a href="contact">Contact</a></li>
+              
+            </ul>
+        </nav>
+ 
+ <h1 class="important" style="margin-top:5%;">Connect with Us!</h1><br>
+ <p class="important">If you have any queries, please mail us at any of the below given address.
+ </p><br><hr><br>
+<center style="font-size:20px;">
+ <div >160417735061@mjcollege.ac.in</a></div> <br>
+
+<div >160417735063@mjcollege.ac.in</a></div> <br>
+
+<div >160417735066@mjcollege.ac.in</a></div> <br>
+
+</center>
+<div class="social-main" style="top:20px;">
+  <a href="#">  <i class="fa fa-github fa-2x"></i></a>
+  <a href="#">  <i class="fa fa-linkedin fa-2x"></i></a>
+  <a href="#">  <i class="fa fa-facebook fa-2x"></i></a>
+  <a href="#">  <i class="fa fa-twitter fa-2x"></i></a>
+  <a href="#">  <i class="fa fa-instagram fa-2x"></i></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

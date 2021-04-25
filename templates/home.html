@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BrainTumor Detection</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/head.css') }}">
+        <style>
+            body{
+    margin:0;
+    background-color: #440a3a;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.line{
+    color:white;
+    top:30px;
+}
+
+      .button{
+        color: white;
+        background-color: #0002;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 40px;
+        display: inline-block;
+        font-family:Century Gothic;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      button a{
+          color:white;
+          text-decoration: none;
+      }
+      .button a:hover{
+          border:0px;
+          text-decoration: none;
+      }
+
+        </style>
+    </head>
+    <body>
+   
+        <!--nav class="navbar"-->
+        <nav style="background-color: #440a3a;">
+            <!--LOGO-->
+            <div class="main">
+                <div  class="cuadrado" >BrainTumorDetection</div>
+            </div>
+            <!--NAVIGATION BAR-->
+            <ul>
+                <li><a class="active" href="home">Home</a></li>
+                 <li><a href="about">About</a></li>
+                <li><a href="base">Upload</a></li> 
+                <li><a href="contact">Contact</a></li>
+
+              
+            </ul>
+        </nav>
+    
+
+        <h1 style="margin-top:5%" >BrainTumor Detection</h1>
+        <!--DESCRIPTION-->
+        <!--p>Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam<br/>
+            ipsum dolor sit amet,consetetur sadipscing elitr<br>
+            ipsum dolor sit amet,consetetur </p-->
+        <p>Want to Detect brain tumor..<br>
+            using python code <br>
+           then what are you waiting for!!
+            </p><br>
+
+        <button type="button" class="button"><a href="/base">Get started</a></button>
+    </body>
+</html>
